@@ -25,9 +25,9 @@ if st.button('불러오기'):
 
     cred = credentials.Certificate('secret.json')
 
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://aihackaton-253aa-default-rtdb.firebaseio.com/'
-    })
+    # firebase_admin.initialize_app(cred, {
+    #     'databaseURL': 'https://aihackaton-253aa-default-rtdb.firebaseio.com/'
+    # })
 
     ref = db.reference('score')
     ref.set({'sum': sum})
